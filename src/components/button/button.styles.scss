@@ -1,0 +1,22 @@
+.btn {
+  display: block;
+  width: 80%;
+  padding: 1rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  outline: none;
+  background-color: #db4437;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &--2 {
+    background-color: #0f9d58;
+  }
+}
