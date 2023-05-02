@@ -28,5 +28,12 @@
     &__container {
       padding: 6rem;
     }
+
+    &__error {
+      margin-bottom: 2rem;
+      display: inline-block;
+      font-size: 1.6rem;
+      color: tomato;
+    }
   }
 }
