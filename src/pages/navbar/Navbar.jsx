@@ -7,12 +7,7 @@ import { ReactComponent as SvgLogo } from "../../assets/shop.svg";
 import { signOutUser } from "../../config/firebase/firebase.config";
 
 const Navbar = () => {
-  const { currentUser, setCurrentUser } = useContext(UserContext);
-
-  const signOUtUserHandler = async () => {
-    await signOutUser();
-    setCurrentUser(null);
-  };
+  const { currentUser } = useContext(UserContext);
 
   return (
     <>
@@ -28,7 +23,7 @@ const Navbar = () => {
           </li>
           <li className="navbar__item">
             {currentUser ? (
-              <span className="navbar__link" onClick={signOUtUserHandler}>
+              <span className="navbar__link" onClick={signOutUser}>
                 Sign Out
               </span>
             ) : (
