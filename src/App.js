@@ -2,10 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Navbar from "./pages/navbar/Navbar";
 import Form from "./pages/form/Form";
-
-const Shop = () => {
-  return <div>I am outlet page</div>;
-};
+import Shop from "./pages/shop/Shop";
 
 const App = () => {
   return (

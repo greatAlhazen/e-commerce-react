@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Bej abaya",
+    "imageUrl": "https://img.freepik.com/free-photo/portrait-woman-wearing-hijab-isolated_23-2149208491.jpg?size=626&ext=jpg&uid=R98833876&ga=GA1.2.1073805965.1681626334&semt=ais",
+    "price": 25
+  },
+  {
+    "id": 2,
+    "name": "Pink abaya",
+    "imageUrl": "https://img.freepik.com/free-photo/full-shot-woman-posing-with-pink-hijab_23-2149642251.jpg?size=626&ext=jpg&uid=R98833876&ga=GA1.2.1073805965.1681626334&semt=ais",
+    "price": 18
+  },
+  {
+    "id": 3,
+    "name": "Headscarf",
+    "imageUrl": "https://img.freepik.com/free-photo/beautiful-woman-wearing-hijab_23-2149288923.jpg?size=626&ext=jpg&uid=R98833876&ga=GA1.2.1073805965.1681626334&semt=sph",
+    "price": 35
+  },
+  {
+    "id": 4,
+    "name": "Black abaya",
+    "imageUrl": "https://img.freepik.com/free-photo/woman-wearing-hijab-desert_23-2149198021.jpg?size=626&ext=jpg&uid=R98833876&ga=GA1.2.1073805965.1681626334&semt=sph",
+    "price": 25
+  },
+  {
+    "id": 5,
+    "name": "High heel shoes",
+    "imageUrl": "https://img.freepik.com/free-photo/bridal-shoes-blue-background_1220-1774.jpg?w=740&t=st=1683374062~exp=1683374662~hmac=40986ce997b4cf1d20907b60d55718e8c47c55c4c6e158936a5388414ee8f1af",
+    "price": 18
+  },
+  {
+    "id": 6,
+    "name": "White shoes",
+    "imageUrl": "https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150218025.jpg?size=626&ext=jpg&uid=R98833876&ga=GA1.2.1073805965.1681626334&semt=ais",
+    "price": 14
+  }
+]
