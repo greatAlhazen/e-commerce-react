@@ -1,0 +1,17 @@
+.cart-items-box {
+  position: fixed;
+  top: 7rem;
+  right: 2rem;
+  width: 30rem;
+  height: 40rem;
+  border: 2px solid rgba($color: #000000, $alpha: 0.7);
+  z-index: 100;
+  background-color: #fff;
+  padding: 0 2rem;
+  padding-top: 3rem;
+
+  &__cart-items {
+    height: calc(100% - 5rem);
+    overflow-y: scroll;
+  }
+}

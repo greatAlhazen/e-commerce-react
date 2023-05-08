@@ -1,0 +1,23 @@
+.cart-badge {
+  position: relative;
+  cursor: pointer;
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+  }
+}

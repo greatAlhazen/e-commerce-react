@@ -6,8 +6,14 @@ import { UserContext } from "../../contexts/user.context";
 import { ReactComponent as SvgLogo } from "../../assets/shop.svg";
 import { signOutUser } from "../../config/firebase/firebase.config";
 
+import CartIcon from "../../components/cart-icon/CartIcon";
+import CartDropdown from "../../components/cart-dropdown/CartDropdown";
+
+import { CartToggleContext } from "../../contexts/cartToggle.context";
+
 const Navbar = () => {
   const { currentUser } = useContext(UserContext);
+  const { isOpen } = useContext(CartToggleContext);
 
   return (
     <>
@@ -32,8 +38,11 @@ const Navbar = () => {
               </Link>
             )}
           </li>
+          <CartIcon />
         </ul>
+        {isOpen && <CartDropdown />}
       </nav>
+
       <Outlet />
     </>
   );
