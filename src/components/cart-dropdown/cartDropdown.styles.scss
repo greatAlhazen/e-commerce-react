@@ -1,5 +1,5 @@
 .cart-items-box {
-  position: fixed;
+  position: absolute;
   top: 7rem;
   right: 2rem;
   width: 30rem;
@@ -9,6 +9,10 @@
   background-color: #fff;
   padding: 0 2rem;
   padding-top: 3rem;
+
+  @media only screen and (max-width: 25em) {
+    width: 25rem;
+  }
 
   &__cart-items {
     height: calc(100% - 5rem);

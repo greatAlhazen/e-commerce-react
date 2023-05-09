@@ -1,0 +1,33 @@
+.cart-item {
+  display: flex;
+
+  &__image {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  &__total {
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+    gap: 1rem;
+    font-size: 1.6rem;
+  }
+
+  &__sign {
+    margin-left: 1rem;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    margin-top: -5rem;
+
+    h1 {
+      text-transform: capitalize;
+    }
+  }
+}

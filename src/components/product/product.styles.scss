@@ -4,6 +4,10 @@
   position: relative;
   border: 1px solid rgba($color: #000000, $alpha: 0.7);
 
+  @media only screen and (max-width: 25em) {
+    width: 25rem;
+  }
+
   &__image {
     width: 100%;
     height: 100%;
@@ -27,6 +31,7 @@
   &__title {
     text-align: center;
     color: #fff;
+    text-transform: capitalize;
   }
 
   &:hover &__details {

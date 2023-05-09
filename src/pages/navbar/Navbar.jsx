@@ -9,11 +9,11 @@ import { signOutUser } from "../../config/firebase/firebase.config";
 import CartIcon from "../../components/cart-icon/CartIcon";
 import CartDropdown from "../../components/cart-dropdown/CartDropdown";
 
-import { CartToggleContext } from "../../contexts/cartToggle.context";
+import { CartContext } from "../../contexts/cart";
 
 const Navbar = () => {
   const { currentUser } = useContext(UserContext);
-  const { isOpen } = useContext(CartToggleContext);
+  const { isOpen } = useContext(CartContext);
 
   return (
     <>

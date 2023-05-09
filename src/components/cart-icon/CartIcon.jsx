@@ -1,17 +1,17 @@
 import "./cartIcon.styles.scss";
 import { ReactComponent as ShopIcon } from "../../assets/shopping-bag.svg";
-import { CartToggleContext } from "../../contexts/cartToggle.context";
+import { CartContext } from "../../contexts/cart";
 import { useContext } from "react";
 
 const CartIcon = () => {
-  const { isOpen, setIsOpen } = useContext(CartToggleContext);
+  const { isOpen, setIsOpen, itemCount } = useContext(CartContext);
 
   const handleToggleCart = () => setIsOpen(!isOpen);
 
   return (
     <div className="cart-badge">
       <ShopIcon className="cart-badge__icon" onClick={handleToggleCart} />
-      <h4 className="cart-badge__badge">0</h4>
+      <h4 className="cart-badge__badge">{itemCount}</h4>
     </div>
   );
 };
