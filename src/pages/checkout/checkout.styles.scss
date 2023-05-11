@@ -1,0 +1,43 @@
+.checkout-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5rem;
+
+  &__header {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 6rem;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid darkgrey;
+
+    @media only screen and (max-width: 56.25em) {
+      width: 95%;
+    }
+
+    @media only screen and (max-width: 40.625em) {
+      grid-gap: 3rem;
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: 25em) {
+      font-size: 1rem;
+    }
+  }
+
+  &__total {
+    width: 80%;
+    text-align: right;
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+
+    @media only screen and (max-width: 56.25em) {
+      width: 95%;
+    }
+  }
+}

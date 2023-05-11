@@ -10,11 +10,7 @@ const CartItem = ({ cartItem }) => {
           <h4 className="cart-item__price">
             ${price} <span className="cart-item__sign">x</span>
           </h4>
-          <h4 className="cart-item__quantity">
-            {quantity}
-            <span className="cart-item__sign">=</span>
-          </h4>
-          <h4 className="cart-item__subtotal">${quantity * price}</h4>
+          <h4 className="cart-item__quantity">{quantity}</h4>
         </div>
       </div>
 

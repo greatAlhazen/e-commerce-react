@@ -25,14 +25,14 @@
   },
   {
     "id": 5,
-    "name": "High heel shoes",
-    "imageUrl": "https://img.freepik.com/free-photo/bridal-shoes-blue-background_1220-1774.jpg?w=740&t=st=1683374062~exp=1683374662~hmac=40986ce997b4cf1d20907b60d55718e8c47c55c4c6e158936a5388414ee8f1af",
+    "name": "Pink headscarf",
+    "imageUrl": "https://img.freepik.com/free-photo/beautiful-woman-wearing-hijab_23-2149288906.jpg?size=626&ext=jpg&uid=R98833876&ga=GA1.2.1073805965.1681626334&semt=sph",
     "price": 18
   },
   {
     "id": 6,
-    "name": "White shoes",
-    "imageUrl": "https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150218025.jpg?size=626&ext=jpg&uid=R98833876&ga=GA1.2.1073805965.1681626334&semt=ais",
+    "name": "Black shoes",
+    "imageUrl": "https://img.freepik.com/free-photo/girl-feet-black-sneaker_53876-98500.jpg?size=626&ext=jpg&uid=R98833876&ga=GA1.2.1073805965.1681626334&semt=ais",
     "price": 14
   }
 ]

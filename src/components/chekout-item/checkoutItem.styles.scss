@@ -1,0 +1,51 @@
+.checkout-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 6rem;
+  width: 80%;
+  min-height: 15rem;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid darkgrey;
+
+  @media only screen and (max-width: 56.25em) {
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 40.625em) {
+    grid-gap: 3rem;
+    font-size: 1.4rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1rem;
+  }
+
+  &__image {
+    width: 10rem;
+    object-fit: cover;
+
+    @media only screen and (max-width: 40.625em) {
+      width: 8rem;
+      display: block;
+      margin: auto 0;
+    }
+
+    @media only screen and (max-width: 25em) {
+      width: 5rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    span {
+      text-transform: capitalize;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+}
