@@ -9,7 +9,7 @@ import { signOutUser } from "../../config/firebase/firebase.config";
 import CartIcon from "../../components/cart-icon/CartIcon";
 import CartDropdown from "../../components/cart-dropdown/CartDropdown";
 
-import { CartContext } from "../../contexts/cart";
+import { CartContext } from "../../contexts/cart.context";
 
 const Navbar = () => {
   const { currentUser } = useContext(UserContext);

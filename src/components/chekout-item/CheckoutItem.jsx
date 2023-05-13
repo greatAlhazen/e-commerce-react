@@ -3,7 +3,7 @@ import { ReactComponent as RightIcon } from "../../assets/chevron-right.svg";
 import { ReactComponent as LeftIcon } from "../../assets/chevron-left.svg";
 import { ReactComponent as CloseIcon } from "../../assets/cross.svg";
 import { useContext } from "react";
-import { CartContext } from "../../contexts/cart";
+import { CartContext } from "../../contexts/cart.context";
 
 const CheckoutItem = ({ cartItem }) => {
   const { name, price, imageUrl, quantity } = cartItem;
