@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { getDocumentAndCollections } from "../config/firebase/firebase.config";
 /* import SHOP_DATA from "../data";
 import { createCollectionsAndDocuments } from "../config/firebase/firebase.config.js"; */
 
@@ -8,6 +9,15 @@ export const ProductContext = createContext({
 
 export const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const getCategories = async () => {
+      const categories = await getDocumentAndCollections();
+      console.log(categories);
+    };
+
+    getCategories();
+  }, []);
 
   /*  useEffect(() => {
     createCollectionsAndDocuments("categories", SHOP_DATA);
