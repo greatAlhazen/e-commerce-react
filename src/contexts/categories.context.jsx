@@ -3,17 +3,18 @@ import { getDocumentAndCollections } from "../config/firebase/firebase.config";
 /* import SHOP_DATA from "../data";
 import { createCollectionsAndDocuments } from "../config/firebase/firebase.config.js"; */
 
-export const ProductContext = createContext({
-  products: [],
+export const CategoriesContext = createContext({
+  categories: {},
 });
 
-export const ProductProvider = ({ children }) => {
-  const [products, setProducts] = useState([]);
+export const CategoriesProvider = ({ children }) => {
+  const [categories, setCatgeories] = useState({});
 
   useEffect(() => {
     const getCategories = async () => {
       const categories = await getDocumentAndCollections();
       console.log(categories);
+      setCatgeories(categories);
     };
 
     getCategories();
@@ -22,8 +23,10 @@ export const ProductProvider = ({ children }) => {
   /*  useEffect(() => {
     createCollectionsAndDocuments("categories", SHOP_DATA);
   }, []); */
-  const value = { products };
+  const value = { categories };
   return (
-    <ProductContext.Provider value={value}>{children}</ProductContext.Provider>
+    <CategoriesContext.Provider value={value}>
+      {children}
+    </CategoriesContext.Provider>
   );
 };

@@ -78,13 +78,6 @@ const SHOP_DATA = [
         price: 160,
       },
       {
-        id: 11,
-        name: "Sneaker",
-        imageUrl:
-          "https://img.freepik.com/free-photo/model-tying-shoelaces-suede-sneaker_53876-97147.jpg?size=626&ext=jpg&uid=R98833876&ga=GA1.2.1073805965.1681626334&semt=ais",
-        price: 160,
-      },
-      {
         id: 12,
         name: "Leather shoes",
         imageUrl:
@@ -105,7 +98,7 @@ const SHOP_DATA = [
       },
       {
         id: 14,
-        name: "Yellow pant",
+        name: "jacket",
         imageUrl: "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
         price: 90,
       },

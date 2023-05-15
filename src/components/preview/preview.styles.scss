@@ -1,0 +1,16 @@
+.preview-container {
+  &__title {
+    margin-left: 7rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+
+  &__preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+  }
+}
