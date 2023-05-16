@@ -19,9 +19,9 @@ export const CategoriesProvider = ({ children }) => {
     getCategories();
   }, []);
 
-  /*  useEffect(() => {
+  /*   useEffect(() => {
     createCollectionsAndDocuments("categories", SHOP_DATA);
-  }, []); */
+  }, []);*/
   const value = { categories };
   return (
     <CategoriesContext.Provider value={value}>

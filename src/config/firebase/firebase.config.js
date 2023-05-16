@@ -21,10 +21,10 @@ import {
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: "greatalhazensop.firebaseapp.com",
-  projectId: "greatalhazensop",
-  storageBucket: "greatalhazensop.appspot.com",
-  messagingSenderId: "222770215801",
+  authDomain: "greatalhazen-ecommerce.firebaseapp.com",
+  projectId: "greatalhazen-ecommerce",
+  storageBucket: "greatalhazen-ecommerce.appspot.com",
+  messagingSenderId: "396246981582",
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
