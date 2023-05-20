@@ -15,7 +15,7 @@ const CheckoutItem = ({ cartItem }) => {
   const handleClearItem = () => clearToCart(cartItem);
 
   return (
-    <div class="checkout-item">
+    <div className="checkout-item">
       <img src={imageUrl} alt={name} className="checkout-item__image" />
       <div className="checkout-item__item">
         <span>{name}</span>

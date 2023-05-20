@@ -1,9 +1,9 @@
 import "./button.styles.scss";
 
-const Button = ({ cls, buttonText, ...other }) => {
+const Button = ({ cls, buttonText, isLoading, ...other }) => {
   return (
-    <button className={`btn btn--${cls}`} {...other}>
-      {buttonText}
+    <button disabled={isLoading} className={`btn btn--${cls}`} {...other}>
+      {isLoading ? <span className="spinner"></span> : buttonText}
     </button>
   );
 };

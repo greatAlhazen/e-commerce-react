@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# [REACT E-COMMERCE WEBSITE](https://turkish-cuisine.onrender.com/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+|            Main             |           Foods            |
+| :-------------------------: | :------------------------: |
+| ![](siteImages/my_app3.png) | ![](siteImages/my_app.png) |
 
-## Available Scripts
+|            Food             |             Add             |
+| :-------------------------: | :-------------------------: |
+| ![](siteImages/my_app2.png) | ![](siteImages/my_app4.png) |
 
-In the project directory, you can run:
+Amazing e-commerce website buid with react and firebase.
 
-### `yarn start`
+## Links:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Live Preview](https://turkish-cuisine.onrender.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `yarn test`
+- Clone the repo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone git@github.com:greatAlhazen/e-commerce-react.git
+```
 
-### `yarn build`
+- Get into main directory and execute this command
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+yarn
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- In the main directory create .env file and specify these
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+REACT_APP_FIREBASE_API_KEY: <YOUR_FIREBASE_API_KEY>
+REACT_APP_FIREBASE_APP_ID: <YOUR_FIREBASE_APP_ID>
+REACT_APP_STRIPE_PUBLISHABLE_KEY: <YOUR_MONGO_STRIPE_PUBLISHABLE_KEY>
+STRIPE_SECRET_KEY: <YOUR_STRIPE_SECRET_KEY>
+```
 
-### `yarn eject`
+- After,get into terminal and execute this command for preview
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+yarn start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- After those get into browser and go to specified http://localhost:<YOUR_PORT>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [cloudinary](https://cloudinary.com/documentation) - The cloud for image upload
+- [connect-flash](https://github.com/jaredhanson/connect-flash) - For UI messages
+- [connect-mongo](https://github.com/jdesboeufs/connect-mongo) - For session store in mongo
+- [dotenv](https://github.com/motdotla/dotenv) - For specified environment variables in development mode
+- [ejs](https://ejs.co/) - For UI
+- [ejs-mate](https://github.com/JacksonTian/ejs-mate) - For UI boilerplate
+- [express](https://expressjs.com/) - For handling http requests
+- [express-mongo-sanitize](https://github.com/fiznool/express-mongo-sanitize) - For guarding mongo injection
+- [express-session](https://github.com/expressjs/session) - For session store
+- [helmet](https://helmetjs.github.io/) - For handling security issues
+- [joi](https://joi.dev/api/?v=17.9.1) - For server-side validation
+- [method-override](https://www.npmjs.com/package/method-override) - For handnling post requests
+- [mongoose](https://mongoosejs.com/docs/) - For managing mongo database
+- [multer](https://github.com/expressjs/multer) - For handling form-files
+- [opencage-api-client](https://opencagedata.com/api) - For handling geocoding
+- [passport](https://www.passportjs.org/docs/) - For configuring passport authentication package
+- [passport-local](https://www.passportjs.org/docs/) - For handling authentication in local
+- [passport-local-mongoose](https://github.com/saintedlama/passport-local-mongoose) - For handling authentication in local
+- [sanitize-html](https://github.com/apostrophecms/sanitize-html) - For guarding script injections
 
-## Learn More
+## Copyright
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright 2023 [Enes Uraz](https://github.com/greatAlhazen)
