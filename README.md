@@ -1,18 +1,18 @@
-# [REACT E-COMMERCE WEBSITE](https://turkish-cuisine.onrender.com/)
+# [React E-commerce Website](https://ubiquitous-moxie-d5e9f8.netlify.app/)
 
-|            Main             |           Foods            |
-| :-------------------------: | :------------------------: |
-| ![](siteImages/my_app3.png) | ![](siteImages/my_app.png) |
+|           Main           |           Shop           |
+| :----------------------: | :----------------------: |
+| ![](siteImages/main.png) | ![](siteImages/shop.png) |
 
-|            Food             |             Add             |
-| :-------------------------: | :-------------------------: |
-| ![](siteImages/my_app2.png) | ![](siteImages/my_app4.png) |
+|           User           |           Checkout           |
+| :----------------------: | :--------------------------: |
+| ![](siteImages/user.png) | ![](siteImages/checkout.png) |
 
 Amazing e-commerce website buid with react and firebase.
 
 ## Links:
 
-- [Live Preview](https://turkish-cuisine.onrender.com/)
+- [Live Preview](https://ubiquitous-moxie-d5e9f8.netlify.app/)
 
 ## Installation
 
@@ -33,8 +33,6 @@ yarn
 ```
 REACT_APP_FIREBASE_API_KEY: <YOUR_FIREBASE_API_KEY>
 REACT_APP_FIREBASE_APP_ID: <YOUR_FIREBASE_APP_ID>
-REACT_APP_STRIPE_PUBLISHABLE_KEY: <YOUR_MONGO_STRIPE_PUBLISHABLE_KEY>
-STRIPE_SECRET_KEY: <YOUR_STRIPE_SECRET_KEY>
 ```
 
 - After,get into terminal and execute this command for preview
@@ -43,29 +41,29 @@ STRIPE_SECRET_KEY: <YOUR_STRIPE_SECRET_KEY>
 yarn start
 ```
 
-- After those get into browser and go to specified http://localhost:<YOUR_PORT>
+- After those get into browser and go to specified http://localhost:3000
 
-## Dependencies
+## For stripe payment
 
-- [cloudinary](https://cloudinary.com/documentation) - The cloud for image upload
-- [connect-flash](https://github.com/jaredhanson/connect-flash) - For UI messages
-- [connect-mongo](https://github.com/jdesboeufs/connect-mongo) - For session store in mongo
-- [dotenv](https://github.com/motdotla/dotenv) - For specified environment variables in development mode
-- [ejs](https://ejs.co/) - For UI
-- [ejs-mate](https://github.com/JacksonTian/ejs-mate) - For UI boilerplate
-- [express](https://expressjs.com/) - For handling http requests
-- [express-mongo-sanitize](https://github.com/fiznool/express-mongo-sanitize) - For guarding mongo injection
-- [express-session](https://github.com/expressjs/session) - For session store
-- [helmet](https://helmetjs.github.io/) - For handling security issues
-- [joi](https://joi.dev/api/?v=17.9.1) - For server-side validation
-- [method-override](https://www.npmjs.com/package/method-override) - For handnling post requests
-- [mongoose](https://mongoosejs.com/docs/) - For managing mongo database
-- [multer](https://github.com/expressjs/multer) - For handling form-files
-- [opencage-api-client](https://opencagedata.com/api) - For handling geocoding
-- [passport](https://www.passportjs.org/docs/) - For configuring passport authentication package
-- [passport-local](https://www.passportjs.org/docs/) - For handling authentication in local
-- [passport-local-mongoose](https://github.com/saintedlama/passport-local-mongoose) - For handling authentication in local
-- [sanitize-html](https://github.com/apostrophecms/sanitize-html) - For guarding script injections
+- Before, install netlify-cli your machine with this command
+
+```
+npm install -g netlify-cli
+```
+
+- Get into main directory .env file and specify these
+
+```
+REACT_APP_STRIPE_PUBLISHABLE_KEY: <YOUR_MONGO_STRIPE_PUBLISHABLE_KEY>
+STRIPE_SECRET_KEY: <YOUR_STRIPE_SECRET_KEY>
+```
+
+- After,specify these commands in order
+
+```
+netlify login
+netlify dev
+```
 
 ## Copyright
 
